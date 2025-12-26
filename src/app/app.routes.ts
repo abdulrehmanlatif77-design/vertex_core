@@ -18,29 +18,23 @@ export const routes: Routes = [
         component:Login
     },
     {
-        path:'',
-        component:Login,
-        children:[
-            {
-                path:'student',
-                component:Student
-            },
-            {
-                path:'course',
-                component:Course
-            },
-            {
-                path:'department',
-                component:Department
-            },
-            {
-                path:'insturctor',
-                component:Instructor
-            },
-            {
-                path:'section',
-                component:Section
-            }
-        ]
+        path:'student',
+        component:Student
+    },
+    {
+        path:'course',
+        component:Course
+    },
+    {
+        path:'department',
+        component:Department
+    },
+    {
+        path:'instructor',
+        component:Instructor
+    },
+    {
+        path:'section',
+        component:Section
     }
 ];
