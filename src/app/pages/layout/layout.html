@@ -1,1 +1,19 @@
-<p>layout works!</p>
+<div class="layout-container">
+	<aside class="sidebar">
+		<div class="sidebar-header">
+			<h2>Vertex Core</h2>
+		</div>
+		<nav class="sidebar-nav">
+			<a routerLink="/student" routerLinkActive="active" class="nav-link">Students</a>
+			<a routerLink="/course" routerLinkActive="active" class="nav-link">Courses</a>
+			<a routerLink="/department" routerLinkActive="active" class="nav-link">Departments</a>
+			<a routerLink="/instructor" routerLinkActive="active" class="nav-link">Instructors</a>
+			<a routerLink="/section" routerLinkActive="active" class="nav-link">Sections</a>
+		</nav>
+	</aside>
+
+	<main class="layout-content">
+		<router-outlet></router-outlet>
+	</main>
+</div>
+
