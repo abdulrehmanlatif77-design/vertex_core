@@ -1,10 +1,11 @@
 import { Routes } from '@angular/router';
-import { Login } from '../pages/login/login';
-import { Student } from '../pages/student/student';
-import { Course } from '../pages/course/course';
-import { Department } from '../pages/department/department';
-import { Instructor } from '../pages/instructor/instructor';
-import { Section } from '../pages/section/section';
+import { Login } from './pages/login/login';
+import { Student } from './pages/student/student';
+import { Course } from './pages/course/course';
+import { Department } from './pages/department/department';
+import { Instructor } from './pages/instructor/instructor';
+import { Section } from './pages/section/section';
+
 
 export const routes: Routes = [
     {
