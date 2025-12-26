@@ -1,0 +1,54 @@
+body {
+    background: #ededed;
+}
+
+.table_outer {
+    padding: 20px 0;
+}
+
+table td,
+table th {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card {
+    border-radius: .5rem;
+}
+
+.custom_table tbody .persons {
+    padding: 0;
+    margin: 0;
+}
+
+.custom_table tbody .persons li {
+    padding: 0;
+    margin: 0 0 0 -15px;
+    list-style: none;
+    display: inline-block;
+}
+
+.custom_table tbody .persons li a {
+    display: inline-block;
+    width: 36px;
+}
+
+.custom_table tbody .persons li a img {
+    border-radius: 50%;
+    max-width: 100%;
+}
+
+
+.custom_table tbody .persons.single li a {
+    margin-left: 7px;
+}
+
+button.btn {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    padding: 0px !important;
+}

@@ -1,1 +1,51 @@
-<p>student works!</p>
+<body>
+        <section class="table_outer">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12">
+                    <div class="card border-0 shadow">
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table custom_table">
+                                    <thead class="table-success">
+                                        <tr>
+                                           
+                                            <th scope="col">First Name</th>
+                                            <th scope="col">Middle Initial</th>
+                                            <th scope="col">Last Name</th>
+                                            <th scope="col">Date Of Birth</th>
+                                            <th scope="col">Gender</th>
+                                            <th scope="col">Address</th>
+                                            <th scope="col">Phone Number</th>
+                                            <th scope="col">Email Address</th>
+                                            <th scope="col">Enrollment Date</th>
+                                            <th scope="col">Degree</th>
+                                            <th scope="col">GPA</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr *ngFor="let s of students">
+                                            <td class="border-1">
+                                                {{ s.firstName }}
+                                            </td>
+                                            <td class="border-1">{{ s.middleInitial }}</td>
+                                            <td class="border-1">{{ s.lastName }}</td>
+                                            <td class="border-1">{{ s.dateOfBirth }}</td>
+                                            <td class="border-1">{{ s.gender }}</td>
+                                            <td class="border-1">{{ s.address }}</td>
+                                            <td class="border-1">{{ s.phoneNumber }}</td>
+                                            <td class="border-1">{{ s.emailAddress }}</td>
+                                            <td class="border-1">{{ s.enrollmentDate }}</td>
+                                            <td class="border-1">{{ s.degree }}</td>
+                                            <td class="border-1">{{ s.gpa }}</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
