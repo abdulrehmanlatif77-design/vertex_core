@@ -5,6 +5,7 @@ import { Course } from './pages/course/course';
 import { Department } from './pages/department/department';
 import { Instructor } from './pages/instructor/instructor';
 import { Section } from './pages/section/section';
+import { Layout } from './pages/layout/layout';
 
 
 export const routes: Routes = [
@@ -18,23 +19,28 @@ export const routes: Routes = [
         component:Login
     },
     {
-        path:'student',
-        component:Student
-    },
-    {
-        path:'course',
-        component:Course
-    },
-    {
-        path:'department',
-        component:Department
-    },
-    {
-        path:'instructor',
-        component:Instructor
-    },
-    {
-        path:'section',
-        component:Section
+        path:'',
+        component:Layout,
+        children:[{
+            path:'student',
+            component:Student
+        
+        },
+        {
+            path:'course',
+            component:Course
+        },
+        {
+            path:'department',
+            component:Department
+        },
+        {
+            path:'instructor',
+            component:Instructor
+        },
+        {
+            path:'section',
+            component:Section
+        }]
     }
 ];

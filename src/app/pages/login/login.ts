@@ -20,13 +20,12 @@ export class Login {
       next: (res: any) => {
        if (res?.isSuccess === true)
        {
-        alert('Login Successful');
         localStorage.setItem('token', res.data.token);
         this.router.navigate(['/student']);
        }
        else
        {
-        alert('Login Failed');  
+        console.log('Login Failed');
        }
       },
       error: (err) => {
